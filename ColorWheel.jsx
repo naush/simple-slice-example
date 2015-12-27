@@ -3,7 +3,6 @@ import Slice from 'simple-slice'
 import modular from 'simple-modular-scale'
 
 class ColorWheel extends React.Component {
-
   render () {
     let ms = modular()
 
@@ -33,11 +32,8 @@ class ColorWheel extends React.Component {
     let props = {
       center: 64,
       radius: 32,
-      opacity: 1.0,
       strokeWidth: 0.5,
-      strokeColor: 'white',
-      mouseEnter: function () { this.setState({ opacity: 0.0 }) },
-      mouseLeave: function () { this.setState({ opacity: 1.0 }) }
+      strokeColor: 'white'
     }
 
     return (
